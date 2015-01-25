@@ -10,7 +10,8 @@ set(SOURCE_FILES
     lib/strlib.h
     lib/simpio.cpp
     lib/simpio.h
-    assignments/assignment1/censorstring.cpp)
+    assignments/assignment1/filesandstructs.cpp
+)
 include_directories(lib)
 
 add_executable(CS106B ${SOURCE_FILES})
