@@ -5,9 +5,7 @@
 //100), and returns the struct you defined. For efficiency?s sake, your function should
 //make only a single pass over the file.
 #include "simpio.h"
-#include <iostream>
 #include <fstream>
-#include "simpio.h"
 
 using namespace std;
 
@@ -27,8 +25,8 @@ int main()
     ifstream in;
 
     while (true) {
-        cout << "Enter file name: ";
-        string s = getLine();
+        cout << "Enter file name: " << endl;
+        string s = getLine();                   // enter full path to the file
         in.open(s.c_str());
         if (!in.fail()) break;
         cout << "File did not open" << endl;
@@ -52,8 +50,9 @@ int caclulateStats(ifstream &in, STATS &holder)
         int number = atof(line.c_str());
         if (number < holder.min) holder.min = number;
         if (number > holder.max) holder.max = number;
-        holder.average = (holder.average * holder.count + number) /
-                (holder.count + 1);
+        holder.average =
+            (holder.average * holder.count + number) /
+            (holder.count + 1);
         holder.count += 1;
     }
     return 0;

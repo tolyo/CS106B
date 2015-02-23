@@ -10,7 +10,10 @@ set(SOURCE_FILES
     lib/strlib.h
     lib/simpio.cpp
     lib/simpio.h
-    assignments/assignment1/filesandstructs.cpp
+    lib/tokenscanner.h
+    lib/tokenscanner.cpp
+    lib/vector.h
+    assignments/assignment1/countletters.cpp
 )
 include_directories(lib)
 
