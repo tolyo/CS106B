@@ -1,1 +1,0 @@
-When you really print this out, it should be 26 elements long, but we couldn't easily
